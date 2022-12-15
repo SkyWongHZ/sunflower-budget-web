@@ -8,22 +8,18 @@ import 'element-plus/dist/index.css'
 
 // 创建一个新的store实例
 const store = createStore({
-    state() {
-        return {
-            count: 0
-        }
-    },
-    mutations: {
-        increment(state) {
-            state.count++
-        }
+  state() {
+    return {
+      count: 0
     }
+  },
+  mutations: {
+    increment(state) {
+      state.count++
+    }
+  }
 })
 
 const app = createApp(App)
 
-
-app.use(store)
-    .use(ElementPlus)
-    .use(router)
-    .mount('#app')
+app.use(store).use(ElementPlus).use(router).mount('#app')

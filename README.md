@@ -1,2 +1,3 @@
-# vue3_-scaffold
-this  is a vue3  scaffold
+# vue3\_-scaffold
+
+this is a vue3 scaffold
