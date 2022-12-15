@@ -5,14 +5,12 @@
 -->
 
 <template>
-    <div>这是about页面</div>
-    <div class="less-style">less使用</div>
+  <div>这是about页面</div>
+  <div class="less-style">less使用</div>
 </template>
 
-<script>
-</script>
-
+<script></script>
 
 <style lang="less" scoped>
-    @import './index.less';
+@import './index.less';
 </style>
