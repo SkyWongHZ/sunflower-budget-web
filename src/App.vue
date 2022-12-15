@@ -1,9 +1,9 @@
-<script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
-import About from './components/About.vue'
-</script>
+<!--
+ * @Author: Sky
+ * @Date: 2022-12-15 10:39:30
+ * @Description: 
+-->
+<script setup lang="ts"></script>
 
 <template>
   <div>
