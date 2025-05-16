@@ -5,6 +5,7 @@ import TheWelcome from '../components/TheWelcome.vue'
 <template>
   <main>
     <!-- <TheWelcome /> -->
-    hello world
+
+    <van-button type="success">主要按钮</van-button>
   </main>
 </template>
