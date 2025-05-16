@@ -1,11 +1,9 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import ViewportDemo from '../components/ViewportDemo.vue'
 </script>
 
 <template>
   <main>
-    <!-- <TheWelcome /> -->
-
-    <van-button type="success">主要按钮</van-button>
+    <ViewportDemo />
   </main>
 </template>
