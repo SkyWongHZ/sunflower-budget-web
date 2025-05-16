@@ -1,0 +1,126 @@
+@import './variables.less';
+
+// 全局样式重置
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  color: @text-color;
+  background-color: @background-color;
+}
+
+a {
+  text-decoration: none;
+  color: @primary-color;
+}
+
+// 常用工具类
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// 间距类
+.m-xs {
+  margin: @padding-xs;
+}
+.m-sm {
+  margin: @padding-sm;
+}
+.m-md {
+  margin: @padding-md;
+}
+.m-lg {
+  margin: @padding-lg;
+}
+.m-xl {
+  margin: @padding-xl;
+}
+
+.p-xs {
+  padding: @padding-xs;
+}
+.p-sm {
+  padding: @padding-sm;
+}
+.p-md {
+  padding: @padding-md;
+}
+.p-lg {
+  padding: @padding-lg;
+}
+.p-xl {
+  padding: @padding-xl;
+}
+
+// 文本样式
+.text-primary {
+  color: @primary-color;
+}
+.text-success {
+  color: @success-color;
+}
+.text-warning {
+  color: @warning-color;
+}
+.text-danger {
+  color: @danger-color;
+}
+.text-light {
+  color: @text-color-light;
+}
+
+// 字体大小
+.font-xs {
+  font-size: @font-size-xs;
+}
+.font-sm {
+  font-size: @font-size-sm;
+}
+.font-md {
+  font-size: @font-size-md;
+}
+.font-lg {
+  font-size: @font-size-lg;
+}
+.font-xl {
+  font-size: @font-size-xl;
+}
