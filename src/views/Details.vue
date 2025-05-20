@@ -103,6 +103,7 @@
                 <span>设置</span>
             </div>
         </div>
+        <bookkeeping-form />
     </div>
 </template>
 
@@ -112,7 +113,9 @@ defineOptions({
     name: 'AccountDetails'
 })
 
-import { ref } from 'vue'
+import { ref, defineAsyncComponent } from 'vue'
+
+const BookkeepingForm = defineAsyncComponent(() => import('../components/bookkeeping.vue'))
 
 /* eslint-disable */
 // 模拟数据
