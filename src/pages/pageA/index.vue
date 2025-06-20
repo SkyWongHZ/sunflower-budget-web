@@ -1,14 +1,21 @@
 <template>
   <view class="container">
     <view class="header">
-      <text class="title">页面A</text>
-      <text class="subtitle">这是从首页跳转过来的页面</text>
+      <text class="title">页面A - 测试 uView Plus</text>
     </view>
     
     <view class="content">
-      <text class="info">当前页面：pages/pageA/index</text>
-      <button class="btn" @click="goBack">返回上一页</button>
-      <button class="btn" @click="goToHome">回到首页</button>
+      <!-- 原生text用于对比 -->
+      <text class="test-text">原生 text 组件</text>
+      
+      <!-- uView Plus 组件测试 -->
+      <u-text text="uView Plus u-text 组件" type="success" size="16"></u-text>
+      
+      <!-- uView Plus 按钮测试 -->
+      <up-button text="uView Plus 按钮" type="success" @click="testClick"></up-button>
+      
+      <!-- 原生按钮用于对比 -->
+      <button class="native-btn" @click="goBack">原生按钮 - 返回</button>
     </view>
   </view>
 </template>
@@ -16,22 +23,24 @@
 <script>
 export default {
   methods: {
-    goBack() {
-      uni.navigateBack({
-        delta: 1
+    testClick() {
+      console.log('uView Plus 按钮点击成功！')
+      uni.showToast({
+        title: 'uView Plus 按钮工作正常！',
+        icon: 'success'
       })
     },
     
-    goToHome() {
-      uni.reLaunch({
-        url: '/pages/index/index'
+    goBack() {
+      uni.navigateBack({
+        delta: 1
       })
     }
   }
 }
 </script>
 
-<style>
+<style scoped>
 .container {
   padding: 20px;
 }
@@ -42,43 +51,29 @@ export default {
 }
 
 .title {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   color: #333;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.subtitle {
-  font-size: 16px;
-  color: #666;
-  display: block;
 }
 
 .content {
   text-align: center;
 }
 
-.info {
+.test-text {
   display: block;
-  margin-bottom: 30px;
-  font-size: 14px;
-  color: #999;
+  margin: 20px 0;
+  color: #666;
 }
 
-.btn {
+.native-btn {
   display: block;
   width: 200px;
   margin: 20px auto;
-  padding: 15px;
-  background: #34c759;
+  padding: 10px;
+  background: #007aff;
   color: white;
   border: none;
-  border-radius: 8px;
-  font-size: 16px;
-}
-
-.btn:active {
-  background: #28a745;
+  border-radius: 4px;
 }
 </style> 

@@ -3,8 +3,8 @@
  */
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
-import { UserInfo } from '@/api/user'
-import { setStorage, getStorage, removeStorage, STORAGE_KEYS } from '@/utils/storage'
+import { UserInfo } from '../api/user'
+import { setStorage, getStorage, removeStorage, STORAGE_KEYS } from '../utils/storage'
 
 export const useUserStore = defineStore('user', () => {
   // 状态
