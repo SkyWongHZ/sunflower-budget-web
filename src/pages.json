@@ -11,13 +11,13 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "首页"
+				"navigationStyle": "custom"
 			}
 		},
 		{
-			"path": "pages/pageA/index",
+			"path": "pages/record/index",
 			"style": {
-				"navigationBarTitleText": "页面A"
+				"navigationBarTitleText": "记账本"
 			}
 		},
 		{
